@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"
     />
+   
     <style>
       body {
         padding-top: 80px;
@@ -17,31 +18,35 @@
       }
     </style>
   </head>
-  <body>
+  <body style="background-color: black;">
     <div class="container">
       <div class="page-header text-center">
-        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
-        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+      
+        <h1 style="color:darkkhaki; font-size: 100px; font-family: sans-serif;">Captured Moments</h1>
+        
       </div>
 
       <div class="row">
         <!-- GOOGLE INFORMATION -->
-        <div class="col-sm-6">
-          <div class="well">
-            <h3 class="text-danger">
+        <div class="col-sm-12">
+          <div >
+            <h3 style="text-align: center;" class="text-danger">
               <span class="fa fa-google-plus"></span> Google
             </h3>
 
             <p>
-              <strong>name</strong>: <%= name %>
+               <h2 style="text-align: center; color: rosybrown; font-size: 50px; font-family: Georgia, 'Times New Roman', Times, serif;"><%= name %></h2>
               <br />
-              <strong>pic:</strong>:
-              <img src="<%=pic%>" width="200" height="200" alt="" />
+              
+              <img style="display: block; margin-left: auto; margin-right: auto;" src="<%=pic%>" width="300" height="300" alt="" />
             </p>
           </div>
         </div>
-
-        <div class="col-sm-6">
+      </div>
+      <br/>
+      <br/>
+        <div class="row">
+        <div class="col-sm-12">
           <div class="well">
             <h3 class="text-danger">
               <span class="fa fa-google-plus"></span> Upload File to Google
@@ -73,6 +78,13 @@
               </div>
             </form>
           </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <p style="text-align: center;"><a href="/logout" class="btn btn-default btn-lg">Logout</a></p>
+        
+        </div>
         </div>
       </div>
     </div>
