@@ -3,6 +3,7 @@ const fs = require('fs')
 
 const app = express()
 
+app.use( express.static( "public" ) );
 //library to upload images
 const multer = require('multer')
 
