@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Node Authentication</title>
+    <title>OAUTH AUTHORIZATION</title>
     <link
       rel="stylesheet"
       href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"
@@ -30,12 +30,12 @@
         <!-- GOOGLE INFORMATION -->
         <div class="col-sm-12">
           <div >
-            <h3 style="text-align: center;" class="text-danger">
+            <h3 style="text-align: center; font-size: 35px; font-weight: bold;" class="text-danger">
               <span class="fa fa-google-plus"></span> Google
             </h3>
 
             <p>
-               <h2 style="text-align: center; color: rosybrown; font-size: 50px; font-family: Georgia, 'Times New Roman', Times, serif;"><%= name %></h2>
+               <h2 style="text-align: center; color:wheat; font-size: 50px; font-family: Georgia, 'Times New Roman', Times, serif;"><%= name %></h2>
               <br />
               
               <img style="display: block; margin-left: auto; margin-right: auto;" src="<%=pic%>" width="300" height="300" alt="" />
@@ -47,11 +47,12 @@
       <br/>
         <div class="row">
         <div class="col-sm-12">
-          <div class="well">
+          <div style="background-color: lightgoldenrodyellow; padding-top: 15px; padding-left: 25px; padding-right: 25px; padding-bottom: 15px;">
             <h3 class="text-danger">
               <span class="fa fa-google-plus"></span> Upload File to Google
               Drive
             </h3>
+            <br/>
             <% if (success) { %>
                 <div class="alert alert-success alert-dismissible">
                   <a href="#" class="close" data-dismiss="alert" aria-label="close"
@@ -80,12 +81,14 @@
           </div>
         </div>
         </div>
+        <br/>
         <div class="row">
           <div class="col-sm-12">
-            <p style="text-align: center;"><a href="/logout" class="btn btn-default btn-lg">Logout</a></p>
+            <p style="text-align: center;"><a style="color: black;" href="/logout" class="btn btn-success btn-lg">Logout</a></p>
         
         </div>
         </div>
+        <br/>
       </div>
     </div>
   </body>
